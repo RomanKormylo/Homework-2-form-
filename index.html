@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <script src="form.js"> </script>
+</head>
+<body>
+<form method="post" action="">
+    <fieldset id="logindetails">
+        <legend>Login details</legend>
+        <label>
+            Username(login)<br>
+            <input type="text" name="login"><br>
+            </label>
+        <label>
+            Password<br>
+            <input type="password" name="password"><br>
+            </label>
+        <label>
+            repeat-password<br>
+            <input type="password" name="re-password"><br>
+        </label>
+    </fieldset>
+    <fieldset id="personalinfo">
+        <legend>Personal Information</legend>
+        <label>
+    First name <br>
+    <input type="text" name="firstname"> <br>
+            </label>
+        <label>
+    Last name <br>
+    <input type="text" name="lastname"> <br>
+            </label>
+        <label>
+    Date of Birthday <br>
+    <input type="date" name="age"> <br>
+            </label>
+<label>
+    Country <br>
+            <select name="countries"> <br>
+                <option value="countries">Countries</option>
+              <option value="uk">United Kingdom</option>
+                <option value="us">United State</option>
+                <option value="eu">European Union countries</option>
+                <option value="ukraine">Ukraine</option>
+                <option value="Asian">Asia</option>
+                <option value="Other">Other</option>
+                </select>
+    </label>
+        <br>
+        <label>
+    Email address<br>
+    <input type="email" name="email"> <br>
+        </label>
+    Sex<br>
+            <label>
+    <input type="radio" name="sex" value="male" checked>male </label>
+            <label>
+    <input type="radio" name="sex" value="female" checked>female</label>
+            <label>
+    <input type="radio" name="sex" value="undefined" checked> undefined</label>
+    </fieldset>
+    <br>
+    <fieldset id="otherinfo">
+    Avatar<br>
+    <input type="file" name="file"><br>
+        <br>
+        <textarea name="comments">
+            Please leave some feedback
+            </textarea>
+</fieldset>
+    <br>
+<input type="submit" onclick="confirmSubmit(this.form)" name="submit">
+    <input type="reset" name="reset">
+</form>
+</body>
+</html>
